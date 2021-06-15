@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginComponent } from './login/login.component';
+import { ResetPasswordComponent } from './ResetPassword/ResetPassword.component';
 import { SignupComponent } from './signup/signup.component';
 import { InputFieldComponent } from './fields/input-field/input-field.component';
 import { SelectFieldComponent } from './fields/select-field/select-field.component';
@@ -111,6 +112,7 @@ const maskConfig: Partial<IConfig> = {
     AppComponent,
     HomePageComponent,
     LoginComponent,
+    ResetPasswordComponent,
     SignupComponent,
     InputFieldComponent,
     SelectFieldComponent,

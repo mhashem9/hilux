@@ -6,6 +6,7 @@ import { FieldsService } from '../shared/fields.service';
 import * as _ from 'lodash';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { NgxSmartModalService } from 'ngx-smart-modal';
 import { ToastrService } from 'ngx-toastr';
 import { environment } from '../../environments/environment';
 
@@ -25,7 +26,8 @@ export class LoginComponent implements OnInit {
     private fieldsService: FieldsService,
     private changeDetector: ChangeDetectorRef,
     private http: HttpClient,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private ngxSmartModalService: NgxSmartModalService,
     ) { }
 
   ngOnInit(): void {
@@ -48,6 +50,15 @@ export class LoginComponent implements OnInit {
       }
     })
   }
+  forgetPasswordFun() {
+    this.ngxSmartModalService.getModal('addBlockToOwnerPropertiesModal').open();
+  }
+  sendPasswordLinkToMail(formData: any){
+    if(! formData.email) return;
+    console.log(formData.email);
+    this.ngxSmartModalService.getModal('addBlockToOwnerPropertiesModal').close();
+  }
+
 
   logout() {
     this.authenticationService.signout();

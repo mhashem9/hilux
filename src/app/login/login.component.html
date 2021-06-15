@@ -25,7 +25,31 @@
                 <label class="form-check-label" for="exampleCheck1"i18n='@@checkMeOut'>Check me out</label>
               </div>
               <button type="submit" class="btn btn-primary" i18n='="@@submit' >Submit</button>
+             <!-- <a href="" (click)="forgetPasswordFun()">  -->
+               <small style="cursor:pointer;margin-top: 4vh" (click)="forgetPasswordFun()" id="emailHelp" class="form-text text-muted" i18n='@@forgetPassword'>Forget Password</small>
+              <!-- </a> -->
             </form>
+            <!-- <ngx-smart-modal #addBlockToOwnerPropertiesModal identifier="addBlockToOwnerPropertiesModal" [escapable]="true" escapable="true" (onAnyCloseEvent)="resetAddBlockToOwnerPropertiesModal()"> -->
+              <ngx-smart-modal #addBlockToOwnerPropertiesModal identifier="addBlockToOwnerPropertiesModal" [escapable]="true" escapable="true" >
+              <div class="modal-header pt-0">
+                <div class="modal-title">
+                  <h4 i18n="@@forgetPassword">Forget Password</h4>
+                </div>
+              </div> 
+              <form  class="rtl" (ngSubmit)="sendPasswordLinkToMail(formData)" #f="ngForm" novalidate>
+                <div class="form-group">
+                  <label for="exampleInputEmail1" i18n="@@loginEmailAddressLabel">Email address</label>
+                  <input type="email" required name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="formData.email">
+                  <small id="emailHelp" class="form-text text-muted" i18n='@@loginEmailhelp'>We'll never share your email with anyone else.</small>
+                </div>
+               
+                <button style="margin-bottom: 1vh;" type="submit" class="btn btn-primary" i18n='="@@submit' >Submit</button>
+               <!-- <a href="" (click)="forgetPasswordFun()">  -->
+                <!-- </a> -->
+              </form>
+
+
+            </ngx-smart-modal>
           </div>
         </div>
       </div>

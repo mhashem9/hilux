@@ -143,8 +143,16 @@
         </context-group>
       </trans-unit>
       <trans-unit id="loginPageLoginLabel" datatype="html">
-        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Hilux<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>Login</source>
-        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Hilux<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>Login Arabic</target>
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Hilux<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>Reset Password</source>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Hilux<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>تغيير كلمة السر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ResetPassword/ResetPassword.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resetPasswordHeader" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Hilux<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>Reset Password</source>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Hilux<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/login/login.component.html</context>
           <context context-type="linenumber">4</context>
@@ -182,6 +190,14 @@
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
+        <trans-unit id="forgetpasswordRepeatLabel" datatype="html">
+        <source>Confirm Password</source>
+        <target>آعادة كلمه السر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ResetPassword/ResetPassword.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="checkMeOut" datatype="html">
         <source>Check me out</source>
         <target>تفقدني</target>
@@ -196,6 +212,24 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/login/login.component.html</context>
           <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">=&quot;</note>
+      </trans-unit>
+      <trans-unit id="forgetPassword" datatype="html">
+        <source>Forget Password</source>
+        <target>نسيت كلمة السر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">=&quot;</note>
+      </trans-unit>
+      <trans-unit id="resetPassword" datatype="html">
+        <source>Reset Password</source>
+        <target>تغيير كلمة السر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ResetPassword/ResetPassword.component.html</context>
+          <context context-type="linenumber">8</context>
         </context-group>
         <note priority="1" from="description">=&quot;</note>
       </trans-unit>
