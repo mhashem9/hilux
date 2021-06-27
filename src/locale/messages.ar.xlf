@@ -4869,7 +4869,7 @@
           <context context-type="linenumber">83</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="applicationSearchToDate" datatype="html">
+      <trans-unit id="applicationSearchToDate" datatype="html"> 
         <source>To Date</source>
         <target>إلى</target>
         <context-group purpose="location">

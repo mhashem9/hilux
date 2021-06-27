@@ -1,4 +1,4 @@
- {
+{
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
@@ -40,7 +40,6 @@
               "node_modules/datatables.net/js/jquery.dataTables.min.js",
               "src/assets/js/dataTables.bootstrap4.min.js",
               "node_modules/jquery-knob/dist/jquery.knob.min.js"
-
             ],
             "i18nFile": "src/locale/messages.ar.xlf",
             "i18nFormat": "xlf",
@@ -177,6 +176,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hilux"
+    }
+  },
+  "defaultProject": "hilux",
+  "cli": {
+    "analytics": "823a9f52-6984-4c84-9e93-7f4d8be7a4e3"
+  }
 }

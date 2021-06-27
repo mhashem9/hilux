@@ -16,6 +16,9 @@ export class FieldsService {
 
   public isEditStep: boolean = false;
   public editStepField: any;
+  public datesValues: Array<{ group: string, value: string }> = [];
+
+  
 
   constructor(private http: HttpClient, private datePipe: DatePipe) {}
 
@@ -29,6 +32,19 @@ export class FieldsService {
 
   getModelName(field_id: string, formdata: any ) {
     return `${formdata}.${field_id}`
+  }
+  setDatesValues(group: string , value: string) {
+    var obj ={
+      group:group,
+      value:value
+    }
+      this.datesValues = this.datesValues.filter(e => {
+        return e.group != group;
+      });
+    this.datesValues.push(obj);
+  }
+  getDatesValues (){
+    return this.datesValues;
   }
 
   getFieldData(field: Field, formData:any = {}, params: any = {}) {

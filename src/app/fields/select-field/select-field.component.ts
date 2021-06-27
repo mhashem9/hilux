@@ -101,6 +101,7 @@ export class SelectFieldComponent implements OnInit {
   }
 
   setDisplayValue(option: any) {
+    // const x =new InputFieldComponent();
     if (this.isMultiple()) {
       this.formData[this.field.fieldID + '_displayValue'] = (option.length ? option.map(o => o.value && o.value.ar).filter(r => r) : []);
     } else {

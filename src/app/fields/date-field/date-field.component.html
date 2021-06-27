@@ -18,6 +18,13 @@
     >
     <owl-date-time [pickerType]="'calendar'" #dt1></owl-date-time>
   </div>
+  <div class="form-group col-12"  *ngIf="field['endDate']">
+  <label class="col-3 col-form-label" >Year</label>
+  <input type="number"  [(ngModel)]="plusYear"[name]="ngModel"  #ngModel="ngModel"  /> <br />
+  <label class="col-3 col-form-label"  >Month</label>
+  <input  type="number"  [(ngModel)]="plusMonth"[name]="ngModel"  #ngModel="ngModel"  /> <br />
+  <button class="col-3 btn btn-primary float-left" type="button"  (click)="addFun(field['endDate'],field.fieldID)">Add</button> 
+  </div>
   <div class="alert alert-danger" *ngIf="ngModel.invalid && (ngModel.dirty || ngModel.touched) && ngModel.errors?.required">
     {{getText(field, 'errorMsg')}}
   </div>

@@ -1,12 +1,13 @@
 <div class="login-page">
   <div class="login-box rtl">
     <div class="login-logo">
-      <a href="/" i18n="@@loginPageLoginLabel"><b>Hilux</b>Login</a>
+      <a href="/" i18n="@@loginPageFormLabel"><b>Hilux</b>Login</a>
     </div>
     <div class="card card-info">
       <div class="card-header">
         <h3 class="card-title" i18n="@@loginPageFormLabel">Login</h3>
       </div>
+      
       <div class="container mt-3">
         <div class="row">
           <div class="col-sm-12 p-5">
@@ -31,29 +32,33 @@
             </form>
             <!-- <ngx-smart-modal #addBlockToOwnerPropertiesModal identifier="addBlockToOwnerPropertiesModal" [escapable]="true" escapable="true" (onAnyCloseEvent)="resetAddBlockToOwnerPropertiesModal()"> -->
               <ngx-smart-modal #addBlockToOwnerPropertiesModal identifier="addBlockToOwnerPropertiesModal" [escapable]="true" escapable="true" >
-              <div class="modal-header pt-0">
-                <div class="modal-title">
-                  <h4 i18n="@@forgetPassword">Forget Password</h4>
-                </div>
-              </div> 
-              <form  class="rtl" (ngSubmit)="sendPasswordLinkToMail(formData)" #f="ngForm" novalidate>
-                <div class="form-group">
-                  <label for="exampleInputEmail1" i18n="@@loginEmailAddressLabel">Email address</label>
-                  <input type="email" required name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="formData.email">
-                  <small id="emailHelp" class="form-text text-muted" i18n='@@loginEmailhelp'>We'll never share your email with anyone else.</small>
-                </div>
-               
-                <button style="margin-bottom: 1vh;" type="submit" class="btn btn-primary" i18n='="@@submit' >Submit</button>
-               <!-- <a href="" (click)="forgetPasswordFun()">  -->
-                <!-- </a> -->
-              </form>
-
-
-            </ngx-smart-modal>
+                <div class="modal-header pt-0">
+                  <div class="modal-title">
+                    <h4 i18n="@@forgetPassword">Forget Password</h4>
+                  </div>
+                </div> 
+                <form  class="rtl" (ngSubmit)="sendPasswordLinkToMail(formData)" #f="ngForm" novalidate>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1" i18n="@@loginEmailAddressLabel">Email address</label>
+                    <input type="email" required name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="formData.email">
+                    <small id="emailHelp" class="form-text text-muted" i18n='@@loginEmailhelp'>We'll never share your email with anyone else.</small>
+                  </div>
+                  <button style="margin-bottom: 1vh;" type="submit" class="btn btn-primary" i18n='="@@submit' >Submit</button>
+                 <!-- <a href="" (click)="forgetPasswordFun()">  -->
+                  <!-- </a> -->
+                </form>
+              </ngx-smart-modal>
           </div>
+          
         </div>
+     
+     
       </div>
+    
     </div>  
+    
   </div>
+  
 </div>
+
 
