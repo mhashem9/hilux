@@ -9,6 +9,7 @@
 @import "~@ng-select/ng-select/themes/default.theme.css";
 @import "~ng-pick-datetime/assets/style/picker.min.css";
 @import '~ngx-toastr/toastr.css';
+@import "~ngx-smart-modal/ngx-smart-modal";
 /* @import '~datatables.net-dt/css/jquery.dataTables.min.css'; */
 @import "~assets/css/dataTables.bootstrap4.min.css";
 
