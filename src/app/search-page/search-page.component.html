@@ -869,7 +869,7 @@
   <!-- /.content -->
 </div>
 
-<ngx-smart-modal #addBlockToOwnerPropertiesModal identifier="addBlockToOwnerPropertiesModal" [escapable]="true" escapable="true" (onAnyCloseEvent)="resetAddBlockToOwnerPropertiesModal()">
+<ngx-smart-modal customClass="msg-modal"  #addBlockToOwnerPropertiesModal [ngStyle]="{width:'500px;'}" identifier="addBlockToOwnerPropertiesModal" [escapable]="true" escapable="true" (onAnyCloseEvent)="resetAddBlockToOwnerPropertiesModal()">
   <div class="modal-header pt-0">
     <div class="modal-title">
       <h4 i18n="@@searchPageAddNewBlockHeader">Add New Block</h4>

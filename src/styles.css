@@ -13,6 +13,9 @@
 /* @import '~datatables.net-dt/css/jquery.dataTables.min.css'; */
 @import "~assets/css/dataTables.bootstrap4.min.css";
 
+.msg-modal{
+  min-width:  70%;
+}
 .main-sidebar, .left-side {
   min-height: 0%;
 }
