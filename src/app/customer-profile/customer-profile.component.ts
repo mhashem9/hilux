@@ -290,7 +290,7 @@ export class CustomerProfileComponent implements OnInit {
           distinctUntilChanged(),
           tap(() => this.ownerNameOptionsLoading = true),
           switchMap(term => {
-            return this.lookupsService.loadOwners({ term }).pipe(
+            return this.lookupsService.loadCustomers({ term }).pipe(
               catchError(() => of([])), // empty list on error
               tap(() => this.ownerNameOptionsLoading = false)
           )})
@@ -305,7 +305,7 @@ export class CustomerProfileComponent implements OnInit {
           distinctUntilChanged(),
           tap(() => this.ownerUniqueIdOptionsLoading = true),
           switchMap(uniqueId => {
-            return this.lookupsService.loadOwners({ uniqueId }).pipe(
+            return this.lookupsService.loadCustomers({ uniqueId }).pipe(
               catchError(() => of([])), // empty list on error
               tap(() => this.ownerUniqueIdOptionsLoading = false)
           )})

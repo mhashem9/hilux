@@ -60,6 +60,10 @@ export class LookupsService {
     return this.fieldsService.getUrl(`${environment.apiHost}/AjmanLandProperty/index.php/lookups/owners`, params);
   }
 
+  loadCustomers(params: any = {}) {
+    return this.fieldsService.getUrl(`${environment.apiHost}/AjmanLandProperty/index.php/lookups/customers`, params);
+  }
+
   loadContactPerferencesOptions(params: any = {}) {
     return this.fieldsService.getUrl(`${environment.apiHost}/AjmanLandProperty/index.php/Lookups/contactPreferencesTypes`, params);
   }
